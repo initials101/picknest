@@ -18,4 +18,14 @@ const userSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-})
+    isVerified: {
+        type: Boolean,
+        default: false
+    },
+    resetPasswordToken: String,
+    resetPasswordEspiresAt: Date,
+    verificationToken: String,
+    verificationTokenEspiresAt: Date,
+},{timestamp: true});
+
+const User = mongoose.model('User', userSchema);
