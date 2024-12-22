@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 
 export const generateTokenAndSetCookie = (req, userId) => {
     const token = jwt.sign({ userId }, process.env.JWT_SECTER, {
-        expiresIn: "2d",
+        expiresIn: "7d",
     });
     req.cookie("token", token, {
         httpOnly: true,
