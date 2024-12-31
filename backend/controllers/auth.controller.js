@@ -1,5 +1,7 @@
-import { User } from '../models/user.model.js';
 import bcrypt from 'bcryptjs';
+import crypto from "crypto";
+
+import { User } from '../models/user.model.js';
 import { generateTokenAndSetCookie } from '../utils/generateTokenAndSetCookie.js';
 
 
@@ -55,4 +57,25 @@ export const login = async (req, res) => {
 
 export const logout = async (req, res) => {
     res.send("logout route");
+}
+
+export const forgotPassword = async (req, res) => {
+    const { emsil } = req.body;
+    try {
+        const user = await User.findOne({ email });
+        if(!user){
+            return res.status(400).json({ success: false, message: "User not found" });
+        }
+        const resetToken = crypto.randomBytes(20).toString("hex");
+        const resetTokenExpiresAt = Date.now() + 1 * 60 * 60 * 1000;
+        user.resetPasswordToken = resetToken;
+        user.resetPasswordEspiresAt = resetTokenExpiresAt;
+        
+        await user.save();
+
+        await sendPasswordResetEmail(user.email, `${process.env.CLIENT_URL}/reset-password/${resetToken}`);
+        
+    } catch (error) {
+        
+    }
 }
