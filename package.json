@@ -1,7 +1,7 @@
 {
   "name": "auth_api",
   "version": "1.0.0",
-  "description": "authendication and authorization api using nodejs",
+  "description": "MERN E-COMMERCE",
   "main": "backend/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
