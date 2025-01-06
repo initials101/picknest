@@ -26,7 +26,7 @@ export const signup = async (req, res) => {
             name,
             verificationToken,
             verificationTokenExpiresAt: Date.now() + 24 * 60 * 1000 // 24HRS
-        })
+        });
 
         await user.save();
 
