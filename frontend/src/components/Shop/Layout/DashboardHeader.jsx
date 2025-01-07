@@ -13,7 +13,7 @@ const DashboardHeader = () => {
       <div>
         <Link to="/dashboard">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            src="https://www.svgrepo.com/svg/294051/online-shopping-ecommerce"
             alt=""
           />
         </Link>
