@@ -23,7 +23,7 @@ const Events = () => {
          }
          <h4>{
            allEvents?.length === 0 && (
-            'No Events have!'
+            'Oops! we have no events at the moment!'
            )
           }
 

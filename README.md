@@ -8,20 +8,24 @@ first clone this repository into your local directory
 
 `install all the dependancies`
 
-```
+```css
 cd frontend
 ```
-```
+```css
 yarn
 ```
 
-```
+```css
 cd socket
 ```
+```css
 npm i
 ```
 
-```cd backend```
+```css
+cd backend
 ```
+
+```css
 npm i
 ```
