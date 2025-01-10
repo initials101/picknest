@@ -2,9 +2,9 @@
 
 ## ALX final capstone project
 
-how to run the website ?
+`how to run the website ?`
 
-first clone this repository into your local directory
+`first clone this repository into your local directory`
 
 `install all the dependancies`
 
