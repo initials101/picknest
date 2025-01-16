@@ -1,6 +1,6 @@
 ## PICKNEST
 
-## ALX final capstone project
+`## ALX final capstone project`
 
 `how to run the website ?`
 
