@@ -359,7 +359,7 @@ const PaymentInfo = ({
                     <PayPalScriptProvider
                       options={{
                         "client-id":
-                          "Aczac4Ry9_QA1t4c7TKH9UusH3RTe6onyICPoCToHG10kjlNdI-qwobbW9JAHzaRQwFMn2-k660853jn",
+                          "ARw47OqUusaMDCGE3qwf4cGq1S3ShcV9mK8h-OKpv1HDA0kUTqLBNprDWGE8P90syZZ3QTIUG5ba3KzU",
                       }}
                     >
                       <PayPalButtons
