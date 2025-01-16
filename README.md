@@ -11,7 +11,7 @@
 ```css
 cd frontend
 ```
-```css
+```js
 yarn
 ```
 
